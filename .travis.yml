@@ -1,0 +1,22 @@
+# Travis CI configuration file.
+
+dist: trusty
+
+sudo: false
+
+language: php
+
+php:
+    - 7.1
+
+before_install: phpenv config-rm xdebug.ini
+
+install:
+    - composer install --no-interaction
+
+script:
+    - vendor/bin/codecept run
+
+notifications:
+    email: false
+
