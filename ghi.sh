@@ -56,19 +56,19 @@ Visualización de géneros
 Implementar la visualización de géneros en una tabla por filas y columnas.
 EOT
 
-read -r -d '' I[9] << 'EOT'
-"Consulta de géneros
+read -r -d '' I[9] <<'EOT'
+Consulta de géneros
 
-Implementar la consulta (búsqueda) de géneros a partir de su denominación."
+Implementar la consulta (búsqueda) de géneros a partir de su denominación.
 EOT
 
-read -r -d '' I[10] << 'EOT'
+read -r -d '' I[10] <<'EOT'
 Modificación de géneros
 
 Implementar la modificación de géneros.
 EOT
 
-for i in ${!I[*]}
+for i in $(seq 0 10)
 do
     `ghi open -m "${I[$i]}"`
 done
