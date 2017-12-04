@@ -70,6 +70,6 @@ EOT
 
 for i in $(seq 0 10)
 do
-    `ghi open -m "${I[$i]}"`
+    ghi open -m "${I[$i]}"
 done
 
